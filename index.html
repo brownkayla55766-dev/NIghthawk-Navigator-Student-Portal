@@ -1,122 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Makayla Student Portal</title>
+<h2>Summer 2026</h2>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0b2a6f, #3b82f6);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
+<table>
 
-        .login-box {
-            background: white;
-            width: 350px;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0px 5px 20px rgba(0,0,0,.3);
-        }
+<tr>
+<th>Course</th>
+<th>Title</th>
+<th>Credits</th>
+<th>Grade</th>
+</tr>
 
-        h1 {
-            color: #0b2a6f;
-        }
+<tr>
+<td>HIST 2111</td>
+<td>History</td>
+<td>3</td>
+<td>B</td>
+</tr>
 
-        input {
-            width: 90%;
-            padding: 12px;
-            margin: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
+<tr>
+<td>PSYC 1101</td>
+<td>Introduction to Psychology</td>
+<td>3</td>
+<td>A</td>
+</tr>
 
-        button {
-            width: 95%;
-            padding: 12px;
-            background: #0b2a6f;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #3b82f6;
-        }
-
-        #error {
-            color: red;
-        }
-    </style>
-
-</head>
-
-
-<body>
-
-<div class="login-box">
-
-    <h1>Makayla Student Portal</h1>
-
-    <p>Student Academic Dashboard</p>
-
-
-    <input 
-    id="email" 
-    type="email" 
-    placeholder="Student Email">
-
-
-    <input 
-    id="password" 
-    type="password" 
-    placeholder="Password">
-
-
-    <button onclick="login()">
-        Login
-    </button>
-
-
-    <p id="error"></p>
-
-</div>
-
-
-<script>
-
-function login(){
-
-    let email = document.getElementById("email").value;
-
-    let password = document.getElementById("password").value;
-
-
-    if(
-        email === "makaylabrown@wgtstudent.edu" &&
-        password === "Twilight55766!"
-    ){
-
-        window.location.href = "dashboard.html";
-
-    }
-
-    else{
-
-        document.getElementById("error").innerHTML =
-        "Incorrect email or password";
-
-    }
-
-}
-
-</script>
-
-
-</body>
-</html>
+</table>
