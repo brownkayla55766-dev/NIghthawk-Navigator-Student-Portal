@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f3f3f3;
+    color: #222;
+}
+
+
+/* Top Header */
+
+.header {
+    background: #111111;
+    color: white;
+    padding: 22px 35px;
+    margin-left: 250px;
+    border-bottom: 4px solid #f5c400;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #cccccc;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+
+    background: #111111;
+
+    padding: 25px;
+
+    color:white;
+
+}
+
+
+.sidebar h2 {
+
+    text-align:center;
+
+    color:#f5c400;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.sidebar a {
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    margin-bottom:10px;
+
+    border-radius:6px;
+
+}
+
+
+
+.sidebar a:hover {
+
+    background:#f5c400;
+
+    color:black;
+
+}
+
+
+
+/* Main Content */
+
+.main {
+
+    margin-left:250px;
+
+    padding:35px;
+
+}
+
+
+
+/* Dashboard Cards */
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    border-left:6px solid #f5c400;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+}
+
+
+
+.card h3 {
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+
+
+.card h1 {
+
+    color:#111;
+
+}
+
+
+
+
+/* Tables */
+
+
+table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    margin-top:20px;
+
+}
+
+
+th {
+
+    background:#111;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+
+td {
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+tr:hover {
+
+    background:#f8f8f8;
+
+}
+
+
+
+/* Buttons */
+
+
+button {
+
+    background:#f5c400;
+
+    color:black;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:6px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover {
+
+    background:#d9aa00;
+
+}
+
+
+
+
+/* Inputs */
+
+
+input {
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #aaa;
+
+    border-radius:6px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+/* White Content Boxes */
+
+
+.box {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+
+
+/* Progress Bar */
+
+
+progress {
+
+    width:100%;
+
+    height:25px;
+
+}
+
+
+
+@media(max-width:800px){
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+
+.header{
+
+margin-left:0;
+
+}
+
+
+.main{
+
+margin-left:0;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
