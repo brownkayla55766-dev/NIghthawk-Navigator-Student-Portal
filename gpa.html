@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>GPA Calculator</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f1f5f9;
+padding:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+}
+
+input{
+padding:10px;
+margin:5px;
+}
+
+button{
+background:#0b2a6f;
+color:white;
+padding:10px;
+border:none;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<a href="dashboard.html">← Dashboard</a>
+
+
+<div class="box">
+
+<h1>📈 GPA Calculator</h1>
+
+
+<p>Enter grades:</p>
+
+
+<input id="g1" placeholder="Grade Points">
+
+<input id="g2" placeholder="Grade Points">
+
+<input id="g3" placeholder="Grade Points">
+
+
+<br><br>
+
+
+<button onclick="calc()">
+Calculate
+</button>
+
+
+<h2 id="result"></h2>
+
+
+</div>
+
+
+
+<script>
+
+function calc(){
+
+let a=Number(document.getElementById("g1").value);
+let b=Number(document.getElementById("g2").value);
+let c=Number(document.getElementById("g3").value);
+
+
+let gpa=(a+b+c)/3;
+
+
+document.getElementById("result").innerHTML=
+"Your GPA: "+gpa.toFixed(2);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
